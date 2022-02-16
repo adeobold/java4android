@@ -27,9 +27,10 @@ public class Main {
         cat2.run(25);
         cat2.swim(2);
 
-        System.out.printf("Количество всех животных: %d\n", Animal.count);
-        System.out.printf("Количество собак: %d\n", Dog.count);
-        System.out.printf("Количество котов: %d\n", Cat.count);
+        System.out.printf("Количество всех животных: %d\n", Animal.getCount());
+        System.out.printf("Количество собак: %d\n", Dog.getCount());
+        System.out.printf("Количество котов: %d\n", Cat.getCount());
+
 
         Animal[] arrayOfAnimals = {dog1, dog2, cat1, cat2};
 

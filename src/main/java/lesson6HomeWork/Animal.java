@@ -8,7 +8,7 @@ package lesson6HomeWork;
 
 public abstract class Animal {
 
-    protected static Integer count = 0;
+    private static Integer count = 0;
 
     protected String title;
     protected String nickName;
@@ -46,6 +46,10 @@ public abstract class Animal {
         return "Animal{" +
                 "nickName='" + nickName + '\'' +
                 '}';
+    }
+
+    public static Integer getCount() {
+        return count;
     }
 
 }

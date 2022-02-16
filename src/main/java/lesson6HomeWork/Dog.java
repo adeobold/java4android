@@ -2,7 +2,7 @@ package lesson6HomeWork;
 
 public class Dog extends Animal {
 
-    public static Integer count = 0;
+    private static Integer count = 0;
 
     private String breed;
 
@@ -29,5 +29,8 @@ public class Dog extends Animal {
         System.out.printf("%s виляет хвостом и рад вас видеть\n", this.nickName);
     }
 
+    public static Integer getCount() {
+        return count;
+    }
 
 }

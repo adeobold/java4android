@@ -2,7 +2,7 @@ package lesson6HomeWork;
 
 public class Cat extends Animal {
 
-    public static Integer count = 0;
+    private static Integer count = 0;
 
     private Boolean isGoodHunter;
 
@@ -31,6 +31,10 @@ public class Cat extends Animal {
 
     public void printInfo() {
         System.out.println(this);
+    }
+
+    public static Integer getCount() {
+        return count;
     }
 
 }
