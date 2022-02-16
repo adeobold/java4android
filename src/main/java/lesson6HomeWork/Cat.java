@@ -4,7 +4,7 @@ public class Cat extends Animal {
 
     private static Integer count = 0;
 
-    private Boolean isGoodHunter;
+    private final Boolean isGoodHunter;
 
     public Cat() {
         this("Лохматый", false);
@@ -13,7 +13,7 @@ public class Cat extends Animal {
     public Cat(String nickName, Boolean isGoodHunter) {
         super("Кот", nickName, 200, 0);
         this.isGoodHunter = isGoodHunter;
-        this.count++;
+        count++;
     }
 
     public void purr() {

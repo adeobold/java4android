@@ -20,7 +20,7 @@ public abstract class Animal {
         this.nickName = nickName;
         this.swimDistance = swimDistance;
         this.runDistance = runDistance;
-        this.count++;
+        count++;
     }
 
     protected void run(Integer distance) {

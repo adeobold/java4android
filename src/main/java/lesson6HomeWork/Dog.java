@@ -4,7 +4,7 @@ public class Dog extends Animal {
 
     private static Integer count = 0;
 
-    private String breed;
+    private final String breed;
 
     public Dog() {
         this("Дворняга", "беспородная");
@@ -13,7 +13,7 @@ public class Dog extends Animal {
     public Dog(String nickName, String breed) {
         super("Собака", nickName, 500, 10);
         this.breed = breed;
-        this.count++;
+        count++;
     }
 
     @Override
