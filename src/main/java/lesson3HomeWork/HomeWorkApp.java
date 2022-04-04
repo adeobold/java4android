@@ -33,15 +33,15 @@ public class HomeWorkApp {
         task6(20);
         System.out.println();
 
-        System.out.println("Task 7");
-        int[] array = new int[]{1, 2, 1, 2, 2};
-        System.out.println(checkBalance(array));
-        System.out.println();
-
-        System.out.println("Task 8");
-        int[] array1 = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        System.out.println(Arrays.toString(array1));
-        System.out.println(Arrays.toString(moveArrayElementsNTimes(array1, -9)));
+//        System.out.println("Task 7");
+//        int[] array = new int[]{1, 2, 1, 2, 2};
+//        System.out.println(checkBalance(array));
+//        System.out.println();
+//
+//        System.out.println("Task 8");
+//        int[] array1 = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+//        System.out.println(Arrays.toString(array1));
+//        System.out.println(Arrays.toString(moveArrayElementsNTimes(array1, -9)));
 
     }
 
@@ -149,7 +149,7 @@ public class HomeWorkApp {
 //
 //    граница показана символами |||, эти символы в массив не входят и не имеют никакого отношения к ИЛИ.
 
-    private static boolean checkBalance(int[] array) {
+    public boolean checkBalance(int[] array) {
 
         for (int i = 0; i < array.length; i++) {
 
@@ -179,7 +179,7 @@ public class HomeWorkApp {
 // Примеры: [ 1, 2, 3 ] при n = 1 (на один вправо) -> [ 3, 1, 2 ]; [ 3, 5, 6, 1] при n = -2 (на два влево) -> [ 6, 1, 3, 5 ].
 // При каком n в какую сторону сдвиг можете выбирать сами.
 
-    private static int[] moveArrayElementsNTimes(int[] array, int n) {
+    public int[] moveArrayElementsNTimes(int[] array, int n) {
 
         int buffer;
 
